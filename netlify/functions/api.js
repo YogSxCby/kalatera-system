@@ -2,6 +2,12 @@ const mysql = require('mysql2/promise');
 
 // Koneksi database TiDB Cloud
 async function getDbConnection() {
+    console.log('🔍 DEBUG DB_HOST:', process.env.DB_HOST);
+    console.log('🔍 DEBUG DB_USER:', process.env.DB_USER);
+    console.log('🔍 DEBUG DB_PORT:', process.env.DB_PORT);
+    console.log('🔍 DEBUG DB_NAME:', process.env.DB_NAME);
+    console.log('🔍 DEBUG DB_PASSWORD Length:', process.env.DB_PASSWORD ? process.env.DB_PASSWORD.length : 'UNDEFINED');
+
     return mysql.createConnection({
         host: process.env.DB_HOST,
         user: process.env.DB_USER,
