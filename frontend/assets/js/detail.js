@@ -1,6 +1,6 @@
 // Konfigurasi
-const API_URL = 'http://localhost:3000/api';
-const IMAGE_BASE_URL = 'assets/images/products/';
+const API_URL = '/api';
+const IMAGE_BASE_URL = '/assets/images/products/';
 const WA_NUMBER = '62895329398808';
 
 let images = [];
